@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> form </title>
+        <style>
+            h1{
+                color : red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            html form
+        </h1>
+        <form>
+            <label for ="fn"> First Name :</label>
+            <input type="text" placeholder="enter your first name" id ="fn" required>
+            <br><br>
+            <label for = "ln"> Last Name :</label>
+            <input type="text" placeholder="enter your last name" id ="ln">
+            <br><br>
+            <label for = "pass"> Password :</label>
+            <input type="Password" placeholder="enter your password" id = "pass">
+            <br><br>
+            <label for ="dob"> Date of Birth :</label> 
+            <input type="date" placeholder="enter your dob" id ="dob" max ="2023-05-21" min ="2023-05-15">
+            <br><br>
+            <label for ="emailid"> Email-id :</label>
+            <input type="" placeholder="enter your mail id" id ="emailid">
+            <br><br>
+            <label for ="clr">Enter your color value :</label>
+            <input id ="color" type="color">
+            <br><br>
+            <label for ="datetime"> enter your cls timing and date : </label>
+            <input type="datetime-local" id ="datetime">
+            <br><br>
+            <label for ="resume">Please upload your resume : </label>
+            <input type="file" id ="resume" multiple>
+            <br><br>
+            <input type ="submit" value = "SUBMIT">
+        </form>
+    </body>
+</html>
