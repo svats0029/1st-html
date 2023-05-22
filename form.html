@@ -2,12 +2,12 @@
     <head>
         <title> form </title>
         <style>
-            h2{
-                color : black;
+            h1{
+                color :black;
                 text-align:center;
             }
             body{
-                background-color: lightcoral;
+                background-image:url(back.jpg);
                 font-size: 18px;
                 color:brown;
             }
@@ -34,11 +34,11 @@
         </style>
     </head>
     <body>
-        <h2>
+        <h1>
             HTML FORM USING CSS
-        </h2>
+        </h1>
         <form>
-            <h2 style = 'color: brown; text-align: left;'> STUDENT REGISTRATION FORM </h2>
+            <h2 style = 'color: brown; text-align: left; border:5px;'> STUDENT REGISTRATION FORM </h2>
             <label for ="fn"> First Name :</label>
             <input type="text" placeholder="enter your first name" id ="fn" required>
             <br><br>
@@ -53,6 +53,10 @@
             <br><br>
             <label for ="emailid"> Email-id :</label>
             <input type="" placeholder="enter your mail id" id ="emailid">
+            <br><br>
+           Gender: Male<input type="checkbox" name="mygender">
+            Female<input type="radio" name="mygender">
+            others<input type="radio" name="mygender">
             <br><br>
             <label for ="clr">Enter your color value :</label>
             <input id ="color" type="color">
