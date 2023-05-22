@@ -17,12 +17,12 @@
             margin: 10px 50px;
             width:500px;           <!-- for fix form wdth -->
            }
-          input{
+    /*      input{
                   height: 30px;
                   width : 150px;
                   border-radius : 5px;
                   float:right
-               }
+               }*/
          .button{
                  background-color: lightcyan;
                  height: 40px;
@@ -77,6 +77,40 @@
             <br><br>
             <label for ="github url"> Enter your github url :</label>
             <input type="url" placeholder="plese enter your github url" id="github url">
+            <br><br>
+            <p>plss enter your gender :</p>
+            <input type="radio" id="radio" name="gender">
+            <label for="radio">Male </label>
+            <input type="radio" id="radio" name="gender">
+            <label for="radio">Female </label>
+            <input type="radio" id="radio" name="gender">
+            <label for="radio">others </label>
+            <br><br>
+            <p>plss enter your fav cars :</p>
+            <input type="checkbox" id="mhindra" name="car">
+            <label for="mhindra">Male </label>
+            <input type="checkbox" id="odi" name="car">
+            <label for="odi">Male </label>
+            <input type="checkbox" id="verna" name="car">
+            <label for="verna">Male </label>
+            <br><br>
+            <label for="schoolcls"> plss select your cls</label> 
+            <select id="schoolcls">
+                <optgroup lable for="class1">
+                <option>section A</option>
+                <option>section B</option>
+                </optgroup>
+                <option>class2</option>
+                <option>class3</option>
+                <option disabled>class4</option>
+                <option>class5</option>
+                <option>class6</option>
+                <option>class7</option>
+                <option>class8</option>
+            </select>
+            <br><br>
+            <label for="query"> plss enter your query : </label>
+            <textarea id= "query" rows="10" cols="50"></textarea>
             <br><br>
             <input type ="reset" class="button">
             <input type ="submit" value = "SUBMIT" class="button">
