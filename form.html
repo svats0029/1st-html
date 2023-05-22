@@ -2,16 +2,43 @@
     <head>
         <title> form </title>
         <style>
-            h1{
-                color : red;
+            h2{
+                color : black;
+                text-align:center;
             }
+            body{
+                background-color: lightcoral;
+                font-size: 18px;
+                color:brown;
+            }
+           form{
+            background-color: bisque;
+            padding: 50px;
+            margin: 10px 50px;
+            width:500px;           <!-- for fix form wdth -->
+           }
+          input{
+                  height: 30px;
+                  width : 150px;
+                  border-radius : 5px;
+                  float:right
+               }
+         .button{
+                 background-color: lightcyan;
+                 height: 40px;
+                 color: blue;
+                 font-size: large;
+                 text-transform: uppercase;
+                 border: 2px solid blue;
+         }
         </style>
     </head>
     <body>
-        <h1>
-            html form
-        </h1>
+        <h2>
+            HTML FORM USING CSS
+        </h2>
         <form>
+            <h2 style = 'color: brown; text-align: left;'> STUDENT REGISTRATION FORM </h2>
             <label for ="fn"> First Name :</label>
             <input type="text" placeholder="enter your first name" id ="fn" required>
             <br><br>
@@ -36,7 +63,21 @@
             <label for ="resume">Please upload your resume : </label>
             <input type="file" id ="resume" multiple>
             <br><br>
-            <input type ="submit" value = "SUBMIT">
+            <!-- <input type ="submit" value = "SUBMIT"> -->
+            <input type ="month">
+            <br><br>
+            <input type="number" max="2023" min="2010">
+            <br><br>
+            <input type="range" min ="0" max="15">
+            <br><br>
+            <input type="time">
+            <br><br>
+            <label for ="github url"> Enter your github url :</label>
+            <input type="url" placeholder="plese enter your github url" id="github url">
+            <br><br>
+            <input type ="reset" class="button">
+            <input type ="submit" value = "SUBMIT" class="button">
+            <!-- <input type ="image" src="submit.jpg" width="80px"> submit button as a image -->
         </form>
     </body>
 </html>
