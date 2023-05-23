@@ -5,32 +5,50 @@
             h1{
                 color :black;
                 text-align:center;
+                text-decoration: underline;
+                font-family: Calibri;
+                font-weight: bold;
             }
             body{
-                background-image:url(back.jpg);
+                background-image:url(back1.jpg);
                 font-size: 18px;
                 color:brown;
+                background-repeat: no-repeat;
+                background-size:cover;
             }
            form{
             background-color: bisque;
             padding: 50px;
             margin: 10px 50px;
-            width:500px;           <!-- for fix form wdth -->
+            width:600px;
+            font-family: Calibri;       
+            border: brown 3px solid;
            }
-    /*      input{
+          /* input{
+                  float:right;
                   height: 30px;
                   width : 150px;
                   border-radius : 5px;
-                  float:right
                }*/
          .button{
                  background-color: lightcyan;
                  height: 40px;
                  color: blue;
                  font-size: large;
+                 font-family: Arial;
                  text-transform: uppercase;
                  border: 2px solid blue;
          }
+         table{
+            font-family: Calibri; 
+            color:white; 
+            background-color:brown;
+            border-collapse: collapse; 
+            border: 2px solid brown;
+            }
+        /*table.inner{
+  border: 0px
+        }*/
         </style>
     </head>
     <body>
@@ -38,12 +56,18 @@
             HTML FORM USING CSS
         </h1>
         <form>
-            <h2 style = 'color: brown; text-align: left; border:5px;'> STUDENT REGISTRATION FORM </h2>
+            <h2 style = 'color: brown; text-align: center; border:5px; text-decoration: underline;font-weight: bold;font-family: Calibri;'> STUDENT REGISTRATION FORM </h2>
             <label for ="fn"> First Name :</label>
-            <input type="text" placeholder="enter your first name" id ="fn" required>
+            <input type="text" placeholder="enter your first name" id ="fn" required maxlength="15">
+            (max 30 character a-z and A-Z)
             <br><br>
             <label for = "ln"> Last Name :</label>
-            <input type="text" placeholder="enter your last name" id ="ln">
+            <input type="text" placeholder="enter your last name" id ="ln" required maxlength="15">
+            (max 15 character a-z and A-Z)
+            <br><br>
+            <label for = "mobile no"> Mob. no. :</label>
+            <input type="text" placeholder="enter your mobile nbr" id = "mobile no" maxlength="10">
+            (10 digit nbr)
             <br><br>
             <label for = "pass"> Password :</label>
             <input type="Password" placeholder="enter your password" id = "pass">
@@ -53,6 +77,24 @@
             <br><br>
             <label for ="emailid"> Email-id :</label>
             <input type="" placeholder="enter your mail id" id ="emailid">
+            <br><br>
+            Country : <input type="text" value="India" readonly >
+            <br><br>
+            Enter your state :
+            <input type="radio" id="radio" name="country">
+            <label for="radio">UP</label>
+            <input type="radio" id="radio" name="country">
+            <label for="radio">Gujrat</label>
+            <input type="radio" id="radio" name="country">
+            <label for="radio">others </label>
+            <br><br>
+             Gender :
+            <input type="radio" id="radio" name="gender">
+            <label for="radio">Male </label>
+            <input type="radio" id="radio" name="gender">
+            <label for="radio">Female </label>
+            <input type="radio" id="radio" name="gender">
+            <label for="radio">others </label>
             <br><br>
             <label for ="clr">Enter your color value :</label>
             <input id ="color" type="color">
@@ -73,44 +115,96 @@
             <label for="rng">Enter range :</label>
             <input type="range" id="rng" min ="0" max="15">
             <br><br>
-            <input type="time">
+            Enter time : <input type="time">
             <br><br>
             <label for ="github url"> Enter your github url :</label>
             <input type="url" placeholder="plese enter your github url" id="github url">
             <br><br>
-            <p>plss enter your gender :</p>
-            <input type="radio" id="radio" name="gender">
-            <label for="radio">Male </label>
-            <input type="radio" id="radio" name="gender">
-            <label for="radio">Female </label>
-            <input type="radio" id="radio" name="gender">
-            <label for="radio">others </label>
-            <br><br>
-            <p>plss enter your fav cars :</p>
-            <input type="checkbox" id="mhindra" name="car">
-            <label for="mhindra">Male </label>
-            <input type="checkbox" id="odi" name="car">
-            <label for="odi">Male </label>
-            <input type="checkbox" id="verna" name="car">
-            <label for="verna">Male </label>
-            <br><br>
-            <label for="schoolcls"> plss select your cls</label> 
-            <select id="schoolcls">
-                <optgroup lable for="class1">
-                <option>section A</option>
-                <option>section B</option>
-                </optgroup>
-                <option>class2</option>
-                <option>class3</option>
-                <option disabled>class4</option>
-                <option>class5</option>
-                <option>class6</option>
-                <option>class7</option>
-                <option>class8</option>
+            what's your fav hobbies :
+        
+            <label for="sing">Singing </label>
+            <input type="checkbox" id="sing">
+            
+            <label for="read">Reading </label>
+            <input type="checkbox" id="read">
+            <label for="Sketch">Sketching </label>
+            <input type="checkbox" id="Sketch">
+            <label for="other">others </label>
+            <select id="other">
+                <option>select</option>
+                <option>cooking</option>
+                <option>writing</option>
+                <option>teaching</option>
             </select>
             <br><br>
+            <label  for="schoolclass">please select your class</label>
+            <select id="schoolclass">
+                <option>Select</option>
+                <optgroup label="Class 1">
+                    <option>Section A</option>
+                    <option>Section B</option>
+                </optgroup>
+                <option value="2">Class 2</option>
+                <option>Class 3</option>
+                <option disabled>Class 4</option>
+                <option>Class 5</option>
+            </select>
+             <br><br>
+            Qulification :
+            <br><br>
+            <table border="">
+                <tr>
+                        <th align="center">Sl.No.</th>
+                        <th align="center">Examination</th>
+                        <th align="center">Board</th>
+                        <th align="center">Percentage / CGPA</th>
+                        <th align="center">Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>class X </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>class XII</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td> Graduation </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td> Masters </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td> Diploma </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td align="center">(10 char max)</td>
+                    <td align="center">(upto 2 decimal)</td>
+                    </tr>
+            </table>
+            <br><br>
             <label for="query"> plss enter your query : </label>
-            <textarea id= "query" rows="10" cols="50"></textarea>
+            <textarea id= "query" rows="5" cols="60"></textarea>
             <br><br>
             <input type ="reset" class="button">
             <input type ="submit" value = "SUBMIT" class="button">
